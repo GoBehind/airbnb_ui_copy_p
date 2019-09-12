@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AdditionCollectionViewCell" customModule="TeatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="310"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="310"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="誠意推出Airbnb Plus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUf-qz-zOE">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="38"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="27"/>
+                        <color key="textColor" red="0.24272287436548223" green="0.24272287436548223" blue="0.24272287436548223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品質卓越、風格獨具嚴選系列" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjp-L1-ulg">
+                        <rect key="frame" x="0.0" y="48" width="280" height="24"/>
+                        <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="17"/>
+                        <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A9a-1C-Qho">
+                        <rect key="frame" x="0.0" y="82" width="280" height="240"/>
+                        <color key="backgroundColor" red="0.69411764710000001" green="0.69411764710000001" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="240" id="udt-Sr-7Ka"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="A9a-1C-Qho" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="97k-gD-KRi"/>
+                <constraint firstAttribute="trailing" secondItem="tjp-L1-ulg" secondAttribute="trailing" id="JFJ-TC-MoC"/>
+                <constraint firstItem="uUf-qz-zOE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N2z-2n-tv1"/>
+                <constraint firstItem="tjp-L1-ulg" firstAttribute="top" secondItem="uUf-qz-zOE" secondAttribute="bottom" constant="10" id="R2R-mX-wto"/>
+                <constraint firstItem="uUf-qz-zOE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SRu-pc-iJF"/>
+                <constraint firstAttribute="trailing" secondItem="uUf-qz-zOE" secondAttribute="trailing" id="e1C-WQ-HZS"/>
+                <constraint firstItem="tjp-L1-ulg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rdc-QF-aWx"/>
+                <constraint firstItem="A9a-1C-Qho" firstAttribute="top" secondItem="tjp-L1-ulg" secondAttribute="bottom" constant="10" id="tT8-oq-UqL"/>
+                <constraint firstAttribute="trailing" secondItem="A9a-1C-Qho" secondAttribute="trailing" id="yhZ-rB-H7W"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="descripionLabel" destination="tjp-L1-ulg" id="25U-iu-fP2"/>
+                <outlet property="titleLabel" destination="uUf-qz-zOE" id="Jc9-Ly-QTd"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="146.65178571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
