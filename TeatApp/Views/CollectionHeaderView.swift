@@ -2,8 +2,8 @@
 //  CollectionHeaderView.swift
 //  TeatApp
 //
-//  Created by 王冠之 on 2019/9/5.
-//  Copyright © 2019 wangkuanchih. All rights reserved.
+//  Created by 王冠之 on 2020/2/20.
+//  Copyright © 2020 wangkuanchih. All rights reserved.
 //
 
 import UIKit
@@ -47,7 +47,7 @@ class CollectionHeaderView: UICollectionReusableView {
         
         roomTitleLabel = UILabel(frame: CGRect.zero)
         roomTitleLabel.translatesAutoresizingMaskIntoConstraints = false
-        roomTitleLabel.text = "世界各的房源"
+        roomTitleLabel.text = "世界各地的房源"
         roomTitleLabel.font = UIFont.boldSystemFont(ofSize: 24)
         roomTitleLabel.textColor = UIColor.black
         addSubview(roomTitleLabel)

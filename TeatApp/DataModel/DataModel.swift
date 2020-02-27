@@ -2,8 +2,8 @@
 //  DataModel.swift
 //  TeatApp
 //
-//  Created by 王冠之 on 2019/9/10.
-//  Copyright © 2019 wangkuanchih. All rights reserved.
+//  Created by 王冠之 on 2020/2/20.
+//  Copyright © 2020 wangkuanchih. All rights reserved.
 //
 
 import Foundation
@@ -15,7 +15,7 @@ struct Room: Codable {
 }
 
 struct Addition: Codable {
-    var thumbnil: String
+    var thumbnail: String
     var title: String
     var description: String
 }
